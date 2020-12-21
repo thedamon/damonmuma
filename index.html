@@ -54,6 +54,10 @@ a, a:visited {
   color: rgb(90, 185, 185);
 
 }
+a:focus {
+  outline: none;
+}
+a:focus,
 a:hover{
   border: 1px solid orangered;
   color: rgb(233, 161, 151);
@@ -61,6 +65,7 @@ a:hover{
   background: rgba(255,255,255,.02)
 }
 
+a:focus svg,
 a:hover svg {
   fill: rgb(126, 216, 216);
   filter: drop-shadow(calc(4px + .8vw) 1px 0 rgba(255, 68, 0, 0.342));
