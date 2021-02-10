@@ -19,6 +19,7 @@ body
   margin: 0;
   font-family:Arial, Helvetica, sans-serif;
   text-align: center;
+  color: #c07d00;
 }
 
 /* Set core body defaults */
@@ -64,7 +65,6 @@ a:hover{
   box-shadow: calc(.625vw + .625em) calc(.625vw + .625em) 0px rgba(255, 68, 0, 0.315);
   background: rgba(255,255,255,.02)
 }
-
 a:focus svg,
 a:hover svg {
   fill: rgb(126, 216, 216);
@@ -82,18 +82,32 @@ svg {
   height: 100%;
   filter: drop-shadow(calc(3px + .6vw) 0 0px rgba(255, 166, 0, 0.274));
 }
-
+* {
+  transition: all .25s;
+}
 h1 {
   color: #c07d00;
   text-align: center;
   padding: 1em;
-  font-weight: normal;
+  font-weight: 600;
+  letter-spacing: calc(.6vw + 2px);
   margin: 0;
-  font-size: calc(5vw + 14px);
-  text-shadow: calc(.5vw + 1px) calc(.5vw + 1px) 0px #ffa6002d;
+  font-size: calc(7vw + 24px);
+  text-shadow: calc(.6vw + 2px) calc(.6vw + 2px) 0px #ffa6002d;
+}
+h1 span {
+  display: inline-block;
+  transform: rotate(-6deg);
+}
+h1 span + span {
+  transform: rotate(-8deg);
+}
+h1 span:hover {
+  transform: rotate(-9deg);
+
 }
 h1:hover {
-  text-shadow: calc(.6vw + 2px) calc(.6vw + 2px) 0px rgba(255, 68, 0, 0.192);
+  text-shadow: calc(.7vw + 4px) calc(.7vw + 4px) 0px rgba(255, 68, 0, 0.192);
 }
 h2 {
   font-size: calc(.9em + .5vw);
@@ -113,7 +127,8 @@ a > * + * {
   </style>
 </head>
 <body>
-  <h1>Damon Muma</h1>
+  <h1><span>Damon</span> <span>Muma</span></h1>
+  <!-- <p>I'm a curious web developer, with a keen interest </p> -->
   <main>
     <a href="https://emergentseas.co/">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 2 36 38">
