@@ -45,13 +45,15 @@ main {
   }
 }
 a, a:visited {
+  aspect-ratio: 1;
   display: flex;
   flex-direction: column;
   text-decoration: none;
   align-items: center;
+  justify-content: flex-end;
   border: 1px solid orange;
   box-shadow: calc(.5vw + .5em) calc(.5vw + .5em) 0px #ffa60025;
-  padding: calc(1vw + 1em);
+  padding: calc(1vw + 2em) calc(1vw + 1em);
   color: rgb(90, 185, 185);
 
 }
@@ -79,7 +81,7 @@ a:after {
 svg {
   fill: rgb(58, 146, 146);
   width: 60%;
-  height: 100%;
+  flex: 1;
   filter: drop-shadow(calc(3px + .6vw) 0 0px rgba(255, 166, 0, 0.274));
 }
 * {
