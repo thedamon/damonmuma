@@ -20,15 +20,13 @@ body
   font-family:Arial, Helvetica, sans-serif;
   text-align: center;
   color: #c07d00;
-}
-
-/* Set core body defaults */
-body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1;
   background-color:rgb(1, 23, 41);
+  background-position: fixed;
+  background: radial-gradient(circle, rgb(7, 37, 61) 0%, rgb(5, 2, 46) 100%);
 }
 main {
   display: grid;
@@ -38,7 +36,7 @@ main {
   padding: calc(2vw + 2em);
   padding-top: 0;
 }
-@media screen and (min-width: 34rem){
+@media screen and (min-width: 38rem){
   main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -55,7 +53,7 @@ a, a:visited {
   box-shadow: calc(.5vw + .5em) calc(.5vw + .5em) 0px #ffa60025;
   padding: calc(1vw + 2em) calc(1vw + 1em);
   color: rgb(90, 185, 185);
-
+  max-width: 480px;
 }
 a:focus {
   outline: none;
